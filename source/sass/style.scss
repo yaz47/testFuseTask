@@ -1,0 +1,14 @@
+@import "normalize";
+@import "pixel-glass";
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "global";
+
+// element blocks
+@import "../blocks/button/button";
+@import "../blocks/article/article";
+
+
+// structure blocks
+@import "../blocks/realty/realty";
