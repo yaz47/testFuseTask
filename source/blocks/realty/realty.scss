@@ -32,6 +32,11 @@
 
   overflow-x: hidden;
 
+  @media (max-width: $only-tablet-width) {
+    width: calc(100% + 2%);
+    margin: 40px -2% 15px 0;
+  }
+
   @media (max-width: $only-mobile-width) {
     display: block;
     width: 100%;
@@ -41,9 +46,13 @@
 
 .realty__item {
   display: flex;
-  flex: 1 1 auto;
-  width: 30%;
+  width: 380px;
   margin: 0 20px 20px 0;
+
+  @media (max-width: $only-tablet-width) {
+    width: 31%;
+    margin: 0 2% 2% 0;
+  }
 
   @media (max-width: $only-mobile-width) {
     width: 100%;

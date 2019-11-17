@@ -3,7 +3,6 @@
 
   position: relative;
   width: 100%;
-  min-height: 100px;
 
   font: $text-article-text;
   color: $black;
@@ -21,6 +20,7 @@
   @include imgContainer();
 
   position: relative;
+  min-height: 100px;
 
   &::after {
     position: absolute;
