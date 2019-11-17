@@ -11,6 +11,9 @@
     "test:style": "stylelint \"source/**/*.scss\" --syntax=scss",
     "test:js": "eslint source/js/**/*.js"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "lint-staged": {
     "*.pug": "pug-lint",
     "*.scss": "stylelint --syntax=scss",

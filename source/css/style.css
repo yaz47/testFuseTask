@@ -604,7 +604,7 @@ body {
   margin: 0 25px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 61, source/sass/global.scss */
   .container {
     margin: 0 50px;
@@ -645,6 +645,8 @@ body {
 .article {
   transition: opacity 0.3s ease-in;
   position: relative;
+  width: 100%;
+  min-height: 100px;
   font: normal 400 16px/1.2 "Open Sans", "Arial", sans-serif;
   color: #363636;
   text-align: left;
@@ -662,12 +664,12 @@ body {
   opacity: 0.3;
 }
 
-/* line 14, source/blocks/article/article.scss */
+/* line 16, source/blocks/article/article.scss */
 .article__link-wrapper {
   display: block;
 }
 
-/* line 18, source/blocks/article/article.scss */
+/* line 20, source/blocks/article/article.scss */
 .article__photo-wrapper {
   overflow: hidden;
   position: relative;
@@ -683,7 +685,7 @@ body {
   padding: 0;
 }
 
-/* line 23, source/blocks/article/article.scss */
+/* line 25, source/blocks/article/article.scss */
 .article__photo-wrapper::after {
   position: absolute;
   right: 0;
@@ -695,48 +697,48 @@ body {
   background-color: #006f79;
 }
 
-/* line 36, source/blocks/article/article.scss */
+/* line 38, source/blocks/article/article.scss */
 .article__photo-wrapper--independent::after {
   content: "Independent living";
   background-color: #006f79;
 }
 
-/* line 42, source/blocks/article/article.scss */
+/* line 44, source/blocks/article/article.scss */
 .article__photo-wrapper--support::after {
   content: "Restaurant & Support available";
   padding: 10px 8px 6px;
   background-color: #ec6608;
 }
 
-/* line 51, source/blocks/article/article.scss */
+/* line 53, source/blocks/article/article.scss */
 .article__container {
   margin: 15px 20px 18px;
 }
 
-/* line 55, source/blocks/article/article.scss */
+/* line 57, source/blocks/article/article.scss */
 .article__title {
   margin: 22px 0 0;
   font: normal 700 20px/1.2 "Open Sans", "Arial", sans-serif;
 }
 
-/* line 61, source/blocks/article/article.scss */
+/* line 63, source/blocks/article/article.scss */
 .article__address {
   margin: 7px 0 18px;
   font: normal 400 16px/1.2 "Open Sans", "Arial", sans-serif;
 }
 
-/* line 67, source/blocks/article/article.scss */
+/* line 69, source/blocks/article/article.scss */
 .article__text {
   margin: 0;
   font: normal 400 16px/1.2 "Open Sans", "Arial", sans-serif;
 }
 
-/* line 73, source/blocks/article/article.scss */
+/* line 75, source/blocks/article/article.scss */
 .article__price {
   font: normal 700 16px/1.2 "Open Sans", "Arial", sans-serif;
 }
 
-/* line 77, source/blocks/article/article.scss */
+/* line 79, source/blocks/article/article.scss */
 .article__info {
   margin: 10px 0 0;
   font: normal 400 14px/1.2 "Open Sans", "Arial", sans-serif;
@@ -762,7 +764,14 @@ body {
   text-align: center;
 }
 
-/* line 23, source/blocks/realty/realty.scss */
+@media (max-width: 767px) {
+  /* line 14, source/blocks/realty/realty.scss */
+  .realty__title {
+    width: 100%;
+  }
+}
+
+/* line 27, source/blocks/realty/realty.scss */
 .realty__list {
   display: flex;
   flex-flow: row wrap;
@@ -771,7 +780,16 @@ body {
   overflow-x: hidden;
 }
 
-/* line 32, source/blocks/realty/realty.scss */
+@media (max-width: 767px) {
+  /* line 27, source/blocks/realty/realty.scss */
+  .realty__list {
+    display: block;
+    width: 100%;
+    margin: 30px 0 15px;
+  }
+}
+
+/* line 42, source/blocks/realty/realty.scss */
 .realty__item {
   display: flex;
   flex: 1 1 auto;
@@ -779,7 +797,21 @@ body {
   margin: 0 20px 20px 0;
 }
 
-/* line 39, source/blocks/realty/realty.scss */
+@media (max-width: 767px) {
+  /* line 42, source/blocks/realty/realty.scss */
+  .realty__item {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 20px;
+  }
+}
+
+/* line 55, source/blocks/realty/realty.scss */
 .realty__more {
   margin: 15px 0;
+}
+
+/* line 59, source/blocks/realty/realty.scss */
+.realty__storage {
+  display: none;
 }

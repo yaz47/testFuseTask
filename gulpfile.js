@@ -109,7 +109,7 @@ function createBuildJs() {
       'source/js/polyfill.js',
       'source/js/picturefill.min.js',
       'source/js/pixelglass.min.js',
-      'source/js/utils.js'
+      'source/blocks/realty/realty.js'
     ])
     .pipe(sourcemap.init())
     .pipe(concat('script.min.js'))
