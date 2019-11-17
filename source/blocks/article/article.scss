@@ -1,79 +1,78 @@
 .article {
-  background-color: $white;
+  @include defaultHoverEffect();
 
-  &--active,
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 80.36px 1.64px rgba($midnight-blue, 0.2);
-  }
+  position: relative;
+
+  font: $text-article-text;
+  color: $black;
+
+  border: 1px solid $grey;
+  background-color: $light-grey;
+}
+
+.article__link-wrapper {
+  display: block;
 }
 
 .article__photo-wrapper {
   @include imgContainer();
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 70%;
+    padding: 10px;
+
+    font: $text-article-badge;
+    color: $white;
+
+    background-color: $cyan;
+  }
+
+  &--independent::after {
+    content: "Independent living";
+
+    background-color: $cyan;
+  }
+
+  &--support::after {
+    content: "Restaurant & Support available";
+
+    background-color: $orange;
+  }
 }
 
 .article__container {
-  margin: 0 35px;
-
-  @media (max-width: $only-mobile-width) {
-    margin: 0 30px;
-  }
+  margin: 15px 20px;
 }
 
 .article__title {
-  margin: 20px 0 10px;
+  margin: 20px 0 0;
 
   font: $text-article-title;
-  color: $midnight-blue;
-
-  @media (max-width: $only-mobile-width) {
-    font: $text-article-title-mobile;
-  }
 }
 
-.article__type {
-  margin: 15px 0;
+.article__address {
+  margin: 0 0 15px;
 
-  font: $text-article-type;
-  color: $midnight-blue;
-
-  @media (max-width: $only-mobile-width) {
-    font: $text-article-type-mobile;
-  }
-}
-
-.article__type-text {
-  font: $text-article-type-text;
-
-  @media (max-width: $only-mobile-width) {
-    font: $text-article-type-text-mobile;
-  }
+  font: $text-article-address;
 }
 
 .article__text {
-  margin: 15px 0 5px;
+  margin: 0;
 
-  font: $text-article;
-  color: $magenta-blue;
-
-  @media (max-width: $only-mobile-width) {
-    font: $text-article-mobile;
-  }
+  font: $text-article-text;
 }
 
-.article__more {
-  display: inline-block;
-  margin: 10px 0 60px;
-  padding-right: 15px;
+.article__price {
+  font: $text-article-price;
+}
 
-  font: $text-article-more;
-  color: $magenta-blue;
+.article__info {
+  margin: 0;
 
-  box-shadow: inset 0 -10px 0 0 $light-yellow;
-
-  @media (max-width: $only-mobile-width) {
-    font: $text-article-more-mobile;
-
-    box-shadow: inset 0 -9px 0 0 $light-yellow;
-  }
+  font: $text-article-info;
 }

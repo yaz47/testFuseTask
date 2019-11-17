@@ -5,12 +5,8 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name='format-detection' content='telephone=no')
-    link(rel='preload' href='fonts/muli-extralight.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/muli-light.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/muli-regular.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/muli-semibold.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/trirong-light.woff2' as='font' crossorigin='anonymous')
-    link(rel='preload' href='fonts/trirong-regular.woff2' as='font' crossorigin='anonymous')
+    link(rel='preload' href='fonts/opensans-bold.woff2' as='font' crossorigin='anonymous')
+    link(rel='preload' href='fonts/opensans-regular.woff2' as='font' crossorigin='anonymous')
     link(href='css/style.min.css' rel='stylesheet')
 
     block title
@@ -25,6 +21,8 @@ html(lang='en')
         }
 
   body
+
+    h1(class='visually-hidden') Real estate
 
     block content
       include ../blocks/realty/realty.pug
