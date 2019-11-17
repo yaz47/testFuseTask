@@ -2,7 +2,7 @@
   @include defaultHoverEffect();
 
   display: inline-block;
-  padding: 15px 35px;
+  padding: 13px 42px 16px 32px;
 
   font: $text-button;
   color: $black;
@@ -10,6 +10,6 @@
   border: 1px solid $grey;
   border-radius: 25px;
   background:
-    center right 25px / 7px 17px no-repeat url("../img/arrow.svg"),
+    center right 28px / 7px 17px no-repeat url("../img/arrow.svg"),
     transparent;
 }
