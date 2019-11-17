@@ -26,23 +26,7 @@ html(lang='en')
 
   body
 
-    block header
-      include ../blocks/header/header.pug
-
     block content
-      main
-        include ../blocks/intro/intro.pug
-        include ../blocks/about/about.pug
-        include ../blocks/clients/clients.pug
-        include ../blocks/portfolio/portfolio.pug
-        include ../blocks/blog/blog.pug
-        include ../blocks/contact/contact.pug
-
-    block footer
-      include ../blocks/footer/footer.pug
-
-    include ../blocks/scroll/scroll.pug
-
-    include ../blocks/gh/gh.pug
+      include ../blocks/realty/realty.pug
 
     script(src='js/script.min.js')

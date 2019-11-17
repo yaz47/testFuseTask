@@ -1,108 +1,32 @@
-$tablet-width: 768px;
-$half-full-hd: 980px;
-$about-breakpoint: 1250px;
-$desktop-width: 1600px;
-$only-mobile-width: 767px;
-$only-tablet-width: 979px;
-$only-about-breakpoint: 1249px;
-$only-half-full-hd: 1599px;
+$tablet-width: 769px;
+$desktop-width: 1300px;
+$only-mobile-width: 768px;
+$only-tablet-width: 1299px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 $white: #ffffff;
-$snow-white: #fefeff;
-$midnight-blue: #2b2d5c;
-$magenta-blue: #595666;
-$grayish-blue: #f7f7fc;
-$light-grayish-blue: #fafafd;
-$dark-grayish-blue: #b6b6c7;
-$dark-blue: #383964;
-$dark-modern-blue: #4d407c;
-$gold: #f2c200;
-$pure-yellow: #ffcc00;
-$light-yellow: #ffe066;
-$red: #ff0000;
-$black: #000000;
+$green: #45852d;
+$orange: #ec6608;
+$cyan: #006f79;
+$light-grey: #f8f8f8;
+$grey: #d8d8d8;
+$black: #363636;
 
-$default-text-color: $white;
-$inverse-text-color: $midnight-blue;
+$default-text-color: $black;
 
-$default-bg-color: $midnight-blue;
+$default-bg-color: $white;
 
-$default-font: "Muli", "Arial", sans-serif;
-$title-font: "Trirong", "Times New Roman", serif;
+$default-font: "Open Sans", "Arial", sans-serif;
 
-$text-default: normal 400 16px/1.5 $default-font;
+$text-default: normal 400 16px/1.2 $default-font;
+$text-title: normal 700 36px/1.2 $default-font;
 
-$text-button: normal 400 16px/1.5 $default-font;
-$text-button-mobile: normal 400 13px/1.5 $default-font;
+$text-button: normal 700 16px/1.2 $default-font;
 
-$text-article-title: normal 600 20px/1.5 $default-font;
-$text-article-title-mobile: normal 600 14px/1.5 $default-font;
-$text-article-type: normal 300 15px/1.75 $default-font;
-$text-article-type-mobile: normal 300 13px/1.6 $default-font;
-$text-article-type-text: normal 600 15px/1.75 $default-font;
-$text-article-type-text-mobile: normal 600 13px/1.75 $default-font;
-$text-article: normal 300 16px/1.75 $default-font;
-$text-article-mobile: normal 300 13px/1.75 $default-font;
-$text-article-more: normal 400 16px/1.5 $default-font;
-$text-article-more-mobile: normal 400 13px/1.5 $default-font;
-
-$text-template: normal 400 60px/1.2 $title-font;
-$text-template-mobile: normal 400 36px/1.2 $title-font;
-
-$text-header-navigation: normal 600 14px/2.3 $default-font;
-
-$text-intro-title: normal 300 60px/1.2 $title-font;
-$text-intro-title-mobile: normal 300 36px/1.2 $title-font;
-$text-intro: normal 200 20px/1.6 $default-font;
-$text-intro-mobile: normal 200 14px/1.6 $default-font;
-
-$text-about-title: normal 300 40px/1.9 $title-font;
-$text-about-title-mobile: normal 300 24px/1.9 $title-font;
-$text-about: normal 300 16px/1.75 $default-font;
-$text-about-mobile: normal 300 13px/1.75 $default-font;
-$text-about-section: normal 300 26px/1.46 $title-font;
-$text-about-section-mobile: normal 300 18px/1.46 $title-font;
-$text-about-activities: normal 600 16px/2.3 $default-font;
-$text-about-activities-mobile: normal 600 13px/2.3 $default-font;
-
-$text-clients-title: normal 300 40px/1.9 $title-font;
-$text-clients-title-mobile: normal 300 24px/1.9 $title-font;
-
-$text-portfolio-title: normal 400 40px/1.9 $title-font;
-$text-portfolio-title-mobile: normal 400 24px/1.9 $title-font;
-$text-portfolio: normal 300 16px/1.75 $default-font;
-$text-portfolio-mobile: normal 300 13px/1.75 $default-font;
-$text-portfolio-more: normal 600 16px/2.3 $default-font;
-$text-portfolio-more-mobile: normal 600 13px/2.3 $default-font;
-
-$text-blog-title: normal 300 40px/1.9 $title-font;
-$text-blog-title-mobile: normal 300 24px/1.9 $title-font;
-$text-blog: normal 300 20px/1.7 $default-font;
-$text-blog-mobile: normal 300 14px/1.7 $default-font;
-
-$text-contact-title: normal 400 40px/1.9 $title-font;
-$text-contact-title-mobile: normal 400 24px/1.9 $title-font;
-$text-contact-input: normal 300 15px/1.75 $default-font;
-$text-contact-input-mobile: normal 300 13px/1.6 $default-font;
-
-$text-footer-title-contact: normal 600 20px/1.5 $default-font;
-$text-footer-title-contact-mobile: normal 600 14px/1.5 $default-font;
-$text-footer-address: normal 300 14px/1.6 $default-font;
-$text-footer-address-mobile: normal 300 13px/1.6 $default-font;
-$text-footer-title: normal 300 24px/2 $default-font;
-$text-footer-title-mobile: normal 300 18px/2 $default-font;
-$text-footer-post-title: normal 300 16px/1.2 $default-font;
-$text-footer-post-title-mobile: normal 300 13px/1.2 $default-font;
-$text-footer-post-type: normal 300 14px/1.6 $default-font;
-$text-footer-post-type-mobile: normal 300 13px/1.6 $default-font;
-$text-footer-post-type-text: normal 600 14px/2.3 $default-font;
-$text-footer-post-type-text-mobile: normal 600 14px/2.3 $default-font;
-$text-footer-more: normal 600 16px/2.3 $default-font;
-$text-footer-more-mobile: normal 600 13px/2.3 $default-font;
-$text-footer-nav: normal 600 14px/2.3 $default-font;
-$text-footer-nav-mobile: normal 600 13px/2.3 $default-font;
-$text-footer-copy: normal 200 14px/2 $default-font;
-$text-footer-copy-mobile: normal 200 13px/2 $default-font;
+$text-article-title: normal 700 20px/1.2 $default-font;
+$text-article-text: normal 400 16px/1.2 $default-font;
+$text-article-price: normal 700 16px/1.2 $default-font;
+$text-article-info: normal 400 14px/1.2 $default-font;
+$text-article-badge: normal 700 12px/1.2 $default-font;

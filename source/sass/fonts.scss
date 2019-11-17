@@ -1,47 +1,23 @@
 @font-face {
-  font-family: "Muli"; /* stylelint-disable-line font-family-name-quotes */
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src:
-    local("Muli ExtraLight"),
-    local("Muli-ExtraLight"),
-    url("../fonts/muli-extralight.woff2") format("woff2"),
-    url("../fonts/muli-extralight.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Muli"; /* stylelint-disable-line font-family-name-quotes */
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src:
-    local("Muli Light"),
-    local("Muli-Light"),
-    url("../fonts/muli-light.woff2") format("woff2"),
-    url("../fonts/muli-light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Muli"; /* stylelint-disable-line font-family-name-quotes */
+  font-family: "Open Sans"; /* stylelint-disable-line font-family-name-quotes */
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src:
-    local("Muli Regular"),
-    local("Muli-Regular"),
-    url("../fonts/muli-regular.woff2") format("woff2"),
-    url("../fonts/muli-regular.woff") format("woff");
+    local("Open Sans Regular"),
+    local("OpenSans-Regular"),
+    url("../fonts/opensans-regular.woff2") format("woff2"),
+    url("../fonts/opensans-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Muli"; /* stylelint-disable-line font-family-name-quotes */
+  font-family: "Open Sans"; /* stylelint-disable-line font-family-name-quotes */
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-display: swap;
   src:
-    local("Muli SemiBold"),
-    local("Muli-SemiBold"),
-    url("../fonts/muli-semibold.woff2") format("woff2"),
-    url("../fonts/muli-semibold.woff") format("woff");
+    local("Open Sans Bold"),
+    local("OpenSans-Bold"),
+    url("../fonts/opensans-bold.woff2") format("woff2"),
+    url("../fonts/opensans-bold.woff") format("woff");
 }
